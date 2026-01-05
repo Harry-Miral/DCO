@@ -1,0 +1,11 @@
+name: dco
+method: DCOModel
+
+configs:
+  # DCO 超参数 (Paper A 推荐默认值)
+  beta: 10.0
+  tau: 0.5
+  
+  # 干预层范围 (Llama3-8B 有 32 层，选择中间层进行干预)
+  intervention_start_layer: 10
+  intervention_end_layer: 30
